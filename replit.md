@@ -31,7 +31,7 @@ Preferred communication style: Simple, everyday language.
 - **Database**: PostgreSQL with Neon Database serverless connection
 - **Schema Management**: Shared schema definitions between client and server
 - **Validation**: Zod schemas for runtime type validation
-- **Current Implementation**: In-memory storage (MemStorage) for development, designed to be replaced with database storage
+- **Current Implementation**: PostgreSQL database storage (DatabaseStorage) with persistent data storage
 
 ## Key Components
 
