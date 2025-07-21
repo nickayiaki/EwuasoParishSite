@@ -5,7 +5,7 @@ const churches = [
   {
     name: "Suswa Church",
     location: "Suswa Town Center, Kajiado County",
-    description: "Our main parish church serving the central Suswa community and surrounding areas.",
+    description: "Main parish church in central Suswa.",
     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     masseTimes: [
       { day: "Sunday", time: "7:00 AM & 10:00 AM", language: "English & Kiswahili" },
@@ -18,7 +18,7 @@ const churches = [
   {
     name: "Saikerri Church",
     location: "Saikerri Village, Kajiado County",
-    description: "A vibrant community church serving the Maasai families in the Saikerri area.",
+    description: "Serving Maasai families in Saikerri area.",
     image: "https://images.unsplash.com/photo-1520637836862-4d197d17c952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     masseTimes: [
       { day: "Sunday", time: "8:00 AM", language: "Kiswahili & Maa" },
@@ -31,7 +31,7 @@ const churches = [
   {
     name: "Enkorika Church",
     location: "Enkorika Community, Kajiado County",
-    description: "Our newest branch serving the growing Enkorika community with traditional and modern worship.",
+    description: "Newest branch serving Enkorika community.",
     image: "https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     masseTimes: [
       { day: "Sunday", time: "9:00 AM", language: "English & Maa" },
@@ -46,9 +46,15 @@ const churches = [
 export default function BranchChurches() {
   return (
     <section id="branches" className="py-16 bg-gradient-to-br from-gray-50 to-orange-50 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjMiIGZpbGw9IiNGRjZBMDAiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9nPjwvc3ZnPg==')] animate-pulse"></div>
+      {/* Animated church background */}
+      <div className="absolute inset-0 opacity-10">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            animation: 'slowZoom 20s infinite'
+          }}
+        ></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">

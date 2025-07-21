@@ -14,16 +14,37 @@ export default function Hero() {
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-red-600 to-pink-700 animate-pulse"></div>
       
-      {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 opacity-80"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      ></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"></div>
+      {/* Animated background images */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 opacity-80 transition-opacity duration-2000"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            animation: 'heroSlide 12s infinite, slowZoom 12s infinite'
+          }}
+        ></div>
+        <div 
+          className="absolute inset-0 opacity-0 transition-opacity duration-2000"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1520637836862-4d197d17c952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            animation: 'heroSlide 12s infinite 4s, slowZoom 12s infinite 4s'
+          }}
+        ></div>
+        <div 
+          className="absolute inset-0 opacity-0 transition-opacity duration-2000"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            animation: 'heroSlide 12s infinite 8s, slowZoom 12s infinite 8s'
+          }}
+        ></div>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/50"></div>
       
       {/* Floating elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -35,13 +56,10 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-orange-100 to-white bg-clip-text text-transparent">
-            Welcome to Ewuaso Parish
+            Ewuaso Parish
           </h1>
-          <p className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed opacity-90">
-            A Catholic community in Kajiado County dedicated to serving God and our Maasai neighbors through faith, hope, and love
-          </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-80">
-            Join Father Mpete and Brother Vincent in making a difference through our rescue center, kindergarten, and community programs
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+            Serving God and our Maasai community in Kajiado County
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

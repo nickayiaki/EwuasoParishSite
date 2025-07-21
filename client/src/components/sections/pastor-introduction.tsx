@@ -22,10 +22,10 @@ export default function PastorIntroduction() {
           <div className="animate-fade-in">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-6">Meet Father Mpete</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Father Mpete has been serving the Ewuaso Parish community in Kajiado County for over 15 years. His dedication to the Maasai and local communities has transformed countless lives through faith, education, and community development.
+              Serving Ewuaso Parish for over 15 years, transforming lives through faith and community development.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Under his leadership, the parish has grown from a single church to three thriving branch churches, established a rescue center, opened a kindergarten school, and initiated numerous community development projects including sustainable farming and livestock programs.
+              Three churches, rescue center, kindergarten, and sustainable farming programs under his leadership.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -89,7 +89,7 @@ export default function PastorIntroduction() {
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Brother Vincent</h3>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Brother Vincent leads our community development projects, managing the parish farm and livestock programs. His expertise in sustainable agriculture and community development has been instrumental in creating self-sustaining programs that benefit the entire Kajiado County community.
+                Leading community development, farm and livestock programs for sustainable agriculture in Kajiado County.
               </p>
               <div className="flex items-center text-green-600 font-semibold">
                 <Users className="mr-2" size={16} />

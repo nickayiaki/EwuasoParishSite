@@ -11,16 +11,22 @@ const projectStats = [
 export default function Projects() {
   return (
     <section id="projects" className="py-16 bg-white relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRjZBMDAiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] animate-pulse"></div>
+      {/* Animated church background */}
+      <div className="absolute inset-0 opacity-8">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            animation: 'slowZoom 30s infinite'
+          }}
+        ></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Community Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Brother Vincent leads our sustainable development initiatives that strengthen community self-reliance in Kajiado County
+            Brother Vincent leads sustainable farming and livestock programs
           </p>
         </div>
         
@@ -41,7 +47,7 @@ export default function Projects() {
               className="w-full h-32 object-cover rounded-lg mb-4 opacity-90"
             />
             <p className="mb-6 leading-relaxed">
-              Our community farm produces vegetables and grains that feed rescue center residents and support food relief programs. We teach modern farming techniques and provide seeds to community members.
+              Producing vegetables and grains for rescue center and food relief programs. Teaching farming techniques to community.
             </p>
             <Button className="bg-white text-green-600 px-6 py-2 font-semibold hover:bg-gray-100 transition-colors group">
               View Progress
