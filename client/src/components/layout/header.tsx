@@ -1,6 +1,17 @@
 import { useState } from "react";
-import { Cross, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Menu, X, Church, Heart } from "lucide-react";
+
+const navigation = [
+  { name: "Home", href: "home" },
+  { name: "About", href: "pastor" },
+  { name: "Churches", href: "branches" },
+  { name: "Ministries", href: "ministries" },
+  { name: "Programs", href: "programs" },
+  { name: "Projects", href: "projects" },
+  { name: "Donate", href: "donation" },
+  { name: "Contact", href: "contact" }
+];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,106 +25,79 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-parish-blue rounded-full flex items-center justify-center">
-              <Cross className="text-white" size={24} />
+          {/* Logo */}
+          <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('home')}>
+            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-3 shadow-lg">
+              <Church className="text-white" size={24} />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Ewuaso Parish</h1>
-              <p className="text-sm text-gray-600">Catholic Community</p>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                Ewuaso Parish
+              </h1>
+              <p className="text-xs text-gray-600">Kajiado County</p>
             </div>
           </div>
-          
+
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('branches')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Our Branches
-            </button>
-            <button 
-              onClick={() => scrollToSection('ministries')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Ministries
-            </button>
-            <button 
-              onClick={() => scrollToSection('programs')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Programs
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Projects
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="text-gray-700 hover:text-parish-blue transition-colors"
-            >
-              Contact
-            </button>
+            {navigation.map((item) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 hover:underline underline-offset-4"
+              >
+                {item.name}
+              </button>
+            ))}
           </nav>
-          
-          <button 
-            className="lg:hidden text-gray-700 hover:text-parish-blue"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+
+          {/* Donate Button (Desktop) */}
+          <div className="hidden lg:block">
+            <Button 
+              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 transition-all duration-200 group"
+              onClick={() => scrollToSection('donation')}
+            >
+              <Heart className="mr-2" size={16} />
+              Support Us
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-700"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-200">
-            <nav className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
+          <div className="lg:hidden border-t border-gray-200 py-4 animate-fade-in">
+            <nav className="flex flex-col space-y-3">
+              {navigation.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-left text-gray-700 hover:text-orange-600 font-medium py-2 transition-colors duration-200"
+                >
+                  {item.name}
+                </button>
+              ))}
+              <Button 
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white mt-4 w-full"
+                onClick={() => scrollToSection('donation')}
               >
-                Home
-              </button>
-              <button 
-                onClick={() => scrollToSection('branches')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
-              >
-                Our Branches
-              </button>
-              <button 
-                onClick={() => scrollToSection('ministries')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
-              >
-                Ministries
-              </button>
-              <button 
-                onClick={() => scrollToSection('programs')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
-              >
-                Programs
-              </button>
-              <button 
-                onClick={() => scrollToSection('projects')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
-              >
-                Projects
-              </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-left text-gray-700 hover:text-parish-blue transition-colors py-2"
-              >
-                Contact
-              </button>
+                <Heart className="mr-2" size={16} />
+                Support Our Mission
+              </Button>
             </nav>
           </div>
         )}

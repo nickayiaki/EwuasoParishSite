@@ -8,6 +8,7 @@ import Programs from "@/components/sections/programs";
 import Projects from "@/components/sections/projects";
 import ServicePrograms from "@/components/sections/service-programs";
 import DisabilitySupport from "@/components/sections/disability-support";
+import Donation from "@/components/sections/donation";
 import EventsCalendar from "@/components/sections/events-calendar";
 import Contact from "@/components/sections/contact";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Projects />
         <ServicePrograms />
         <DisabilitySupport />
+        <Donation />
         <EventsCalendar />
         <Contact />
       </main>

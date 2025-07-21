@@ -1,65 +1,136 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Clock, MapPin } from "lucide-react";
+import { MapPin, Clock, Users, Phone } from "lucide-react";
 
-const branches = [
+const churches = [
   {
     name: "Suswa Church",
-    description: "Our main church serving the Suswa community with daily masses and community programs.",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    massTime: "Sunday Mass: 8:00 AM & 10:30 AM",
-    location: "Central Suswa Location"
+    location: "Suswa Town Center, Kajiado County",
+    description: "Our main parish church serving the central Suswa community and surrounding areas.",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    masseTimes: [
+      { day: "Sunday", time: "7:00 AM & 10:00 AM", language: "English & Kiswahili" },
+      { day: "Saturday", time: "6:00 PM", language: "English" },
+      { day: "Weekdays", time: "6:30 AM", language: "Kiswahili" }
+    ],
+    contact: "+254 712 345 678",
+    bgClass: "from-orange-500 to-red-500"
   },
   {
-    name: "Saikerri Church", 
-    description: "A vibrant community church known for its youth programs and agricultural initiatives.",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    massTime: "Sunday Mass: 9:00 AM",
-    location: "Saikerri Village"
+    name: "Saikerri Church",
+    location: "Saikerri Village, Kajiado County",
+    description: "A vibrant community church serving the Maasai families in the Saikerri area.",
+    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    masseTimes: [
+      { day: "Sunday", time: "8:00 AM", language: "Kiswahili & Maa" },
+      { day: "Saturday", time: "5:30 PM", language: "Maa" },
+      { day: "Wednesday", time: "6:00 PM", language: "Kiswahili" }
+    ],
+    contact: "+254 722 987 654",
+    bgClass: "from-green-500 to-emerald-600"
   },
   {
     name: "Enkorika Church",
-    description: "Our newest branch focusing on disability support services and inclusive worship.",
-    image: "https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    massTime: "Sunday Mass: 10:00 AM", 
-    location: "Enkorika Community"
+    location: "Enkorika Community, Kajiado County",
+    description: "Our newest branch serving the growing Enkorika community with traditional and modern worship.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    masseTimes: [
+      { day: "Sunday", time: "9:00 AM", language: "English & Maa" },
+      { day: "Saturday", time: "6:30 PM", language: "English" },
+      { day: "Friday", time: "6:00 PM", language: "Kiswahili" }
+    ],
+    contact: "+254 733 456 789",
+    bgClass: "from-blue-500 to-indigo-600"
   }
 ];
 
 export default function BranchChurches() {
   return (
-    <section id="branches" className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="branches" className="py-16 bg-gradient-to-br from-gray-50 to-orange-50 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjMiIGZpbGw9IiNGRjZBMDAiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9nPjwvc3ZnPg==')] animate-pulse"></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Branch Churches</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Our Churches</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Serving three communities with the same dedication to faith and service
+            Three vibrant church communities serving diverse populations across Kajiado County
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {branches.map((branch, index) => (
-            <Card key={index} className="bg-white shadow-lg overflow-hidden">
-              <img 
-                src={branch.image} 
-                alt={branch.name}
-                className="w-full h-48 object-cover"
-              />
+        <div className="grid lg:grid-cols-3 gap-8">
+          {churches.map((church, index) => (
+            <Card key={index} className="bg-white shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in" style={{animationDelay: `${index * 150}ms`}}>
+              <div className="relative overflow-hidden">
+                <img 
+                  src={church.image} 
+                  alt={church.name}
+                  className="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-t ${church.bgClass} opacity-80`}></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">{church.name}</h3>
+                </div>
+              </div>
+              
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{branch.name}</h3>
-                <p className="text-gray-600 mb-4">{branch.description}</p>
-                <div className="space-y-2 text-sm text-gray-700">
-                  <div className="flex items-center">
-                    <Clock className="h-4 w-4 text-parish-blue mr-2" />
-                    {branch.massTime}
+                <div className="flex items-start mb-4">
+                  <MapPin className="text-orange-600 mr-2 mt-1 flex-shrink-0" size={16} />
+                  <p className="text-gray-600 text-sm leading-relaxed">{church.location}</p>
+                </div>
+                
+                <p className="text-gray-700 mb-6 leading-relaxed">{church.description}</p>
+                
+                <div className="mb-6">
+                  <div className="flex items-center mb-3">
+                    <Clock className="text-orange-600 mr-2" size={16} />
+                    <h4 className="font-semibold text-gray-900">Mass Times</h4>
                   </div>
-                  <div className="flex items-center">
-                    <MapPin className="h-4 w-4 text-parish-blue mr-2" />
-                    {branch.location}
+                  <div className="space-y-2">
+                    {church.masseTimes.map((mass, massIndex) => (
+                      <div key={massIndex} className="bg-gray-50 p-3 rounded-lg">
+                        <div className="flex justify-between items-start">
+                          <div>
+                            <span className="font-medium text-gray-900">{mass.day}</span>
+                            <div className="text-orange-600 font-semibold">{mass.time}</div>
+                          </div>
+                          <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded">{mass.language}</span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
+                </div>
+                
+                <div className="flex items-center pt-4 border-t border-gray-200">
+                  <Phone className="text-green-600 mr-2" size={16} />
+                  <span className="text-gray-700 font-medium">{church.contact}</span>
                 </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        {/* Special Services */}
+        <div className="mt-16 bg-white rounded-xl p-8 shadow-xl">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Special Services & Events</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-lg border border-orange-200">
+              <Users className="w-8 h-8 text-orange-600 mx-auto mb-3" />
+              <h4 className="font-semibold text-gray-900 mb-2">Wedding Ceremonies</h4>
+              <p className="text-gray-600 text-sm">Beautiful wedding ceremonies in traditional and modern styles</p>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+              <Users className="w-8 h-8 text-blue-600 mx-auto mb-3" />
+              <h4 className="font-semibold text-gray-900 mb-2">Baptisms & Confirmations</h4>
+              <p className="text-gray-600 text-sm">Welcoming new members into our faith community</p>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg border border-green-200">
+              <Users className="w-8 h-8 text-green-600 mx-auto mb-3" />
+              <h4 className="font-semibold text-gray-900 mb-2">Community Gatherings</h4>
+              <p className="text-gray-600 text-sm">Regular fellowship meetings and cultural celebrations</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
