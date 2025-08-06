@@ -27,15 +27,33 @@ export default function Footer() {
               A Catholic community dedicated to serving God and our Maasai neighbors through faith, hope, and love in Kajiado County, Kenya.
             </p>
             <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
+              <a
+                href="https://facebook.com/ewuasoparish"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
+                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer"
+              >
                 <Facebook size={16} />
-              </div>
-              <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors cursor-pointer">
+              </a>
+              <a
+                href="https://instagram.com/ewuasoparish"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Instagram profile"
+                className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors cursor-pointer"
+              >
                 <Instagram size={16} />
-              </div>
-              <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer">
+              </a>
+              <a
+                href="https://twitter.com/ewuasoparish"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Twitter/X profile"
+                className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer"
+              >
                 <Twitter size={16} />
-              </div>
+              </a>
             </div>
           </div>
 

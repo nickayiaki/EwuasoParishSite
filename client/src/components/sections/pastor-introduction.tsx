@@ -63,7 +63,7 @@ export default function PastorIntroduction() {
           <div className="animate-fade-in" style={{animationDelay: '200ms'}}>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=700" 
+                src="/Images/father.jpg" 
                 alt="Father Mpete, Pastor of Ewuaso Parish" 
                 className="w-full h-96 object-cover rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
@@ -81,7 +81,7 @@ export default function PastorIntroduction() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                src="/Images/brother2.jpg" 
                 alt="Brother Vincent" 
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               />

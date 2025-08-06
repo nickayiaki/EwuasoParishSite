@@ -6,7 +6,7 @@ const churches = [
     name: "Suswa Church",
     location: "Suswa Town Center, Kajiado County",
     description: "Main parish church in central Suswa.",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "/Images/Suswa.jpg",
     masseTimes: [
       { day: "Sunday", time: "7:00 AM & 10:00 AM", language: "English & Kiswahili" },
       { day: "Saturday", time: "6:00 PM", language: "English" },
@@ -19,7 +19,7 @@ const churches = [
     name: "Saikerri Church",
     location: "Saikerri Village, Kajiado County",
     description: "Serving Maasai families in Saikerri area.",
-    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "/Images/Saikerri.jpg",
     masseTimes: [
       { day: "Sunday", time: "8:00 AM", language: "Kiswahili & Maa" },
       { day: "Saturday", time: "5:30 PM", language: "Maa" },
@@ -32,7 +32,7 @@ const churches = [
     name: "Enkorika Church",
     location: "Enkorika Community, Kajiado County",
     description: "Newest branch serving Enkorika community.",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "/Images/saikerri.jpg",
     masseTimes: [
       { day: "Sunday", time: "9:00 AM", language: "English & Maa" },
       { day: "Saturday", time: "6:30 PM", language: "English" },
@@ -74,7 +74,6 @@ export default function BranchChurches() {
                   alt={church.name}
                   className="w-full h-48 object-cover transform hover:scale-110 transition-transform duration-500"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${church.bgClass} opacity-80`}></div>
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-xl font-bold">{church.name}</h3>
                 </div>
