@@ -16,7 +16,7 @@ export default function Projects() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2ac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
+            backgroundImage: "url('/attached_assets/generated_images/Rural_African_Church_d923e104.png')",
             animation: 'slowZoom 30s infinite'
           }}
         ></div>
@@ -42,7 +42,7 @@ export default function Projects() {
               </div>
             </div>
             <img 
-              src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200" 
+              src="/attached_assets/generated_images/Community_Farm_Project_75231ca2.png" 
               alt="Community Farm" 
               className="w-full h-32 object-cover rounded-lg mb-4 opacity-90"
             />
@@ -66,7 +66,7 @@ export default function Projects() {
               </div>
             </div>
             <img 
-              src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=200" 
+              src="/attached_assets/generated_images/Livestock_Program_88e44564.png" 
               alt="Livestock Program" 
               className="w-full h-32 object-cover rounded-lg mb-4 opacity-90"
             />

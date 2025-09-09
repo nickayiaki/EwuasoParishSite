@@ -6,7 +6,7 @@ const programs = [
   {
     title: "Rescue Center Program",
     description: "Our rescue center provides safe accommodation, counseling, and rehabilitation services for vulnerable individuals and families. We offer temporary housing, meals, and support services while helping residents develop skills for independent living.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "/attached_assets/generated_images/Rescue_Center_Ministry_b109b3d9.png",
     features: [
       "24/7 Safe Accommodation",
       "Counseling Services", 
@@ -19,7 +19,7 @@ const programs = [
   {
     title: "Parish Kindergarten",
     description: "Our kindergarten provides quality early childhood education with a foundation of Christian values. We prepare children for primary school while nurturing their spiritual, social, and academic development in a caring environment.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: "/attached_assets/generated_images/Parish_Kindergarten_f48ff65b.png",
     features: [
       "Qualified Teachers",
       "Christian Education",
