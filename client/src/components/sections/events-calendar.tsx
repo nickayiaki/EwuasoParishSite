@@ -9,7 +9,7 @@ const events = [
     location: "All Churches • 8:00 AM - 12:00 PM",
     icon: Calendar,
     bgClass: "from-red-500 to-orange-600",
-    image: "/attached_assets/generated_images/Christmas_Church_Celebration_1b5cc3b0.png"
+    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
   },
   {
     title: "Farm Training Workshop", 
@@ -18,7 +18,7 @@ const events = [
     location: "Parish Farm • 9:00 AM - 4:00 PM",
     icon: Sprout,
     bgClass: "from-green-500 to-emerald-600",
-    image: "/attached_assets/generated_images/Farm_Training_Workshop_5660a62d.png"
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
   },
   {
     title: "Scholarship Applications",
@@ -27,7 +27,7 @@ const events = [
     location: "Online & Parish Office",
     icon: GraduationCap,
     bgClass: "from-blue-500 to-indigo-600",
-    image: "/attached_assets/generated_images/Scholarship_Program_Support_ccf3c3b5.png"
+    image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
   },
   {
     title: "Community Health Outreach",
@@ -36,7 +36,7 @@ const events = [
     location: "Suswa Church • 8:00 AM - 4:00 PM",
     icon: Heart,
     bgClass: "from-pink-500 to-rose-600",
-    image: "/attached_assets/generated_images/Community_Health_Outreach_2935a18a.png"
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
   }
 ];
 

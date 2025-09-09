@@ -5,19 +5,19 @@ const supportServices = [
   {
     title: "Accessible Facilities",
     description: "All our churches feature wheelchair accessibility, accessible bathrooms, and designated seating areas.",
-    image: "/attached_assets/generated_images/Accessible_Parish_Facilities_20b3ceca.png",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
     icon: Accessibility
   },
   {
     title: "Support Groups", 
     description: "Regular support group meetings for individuals with disabilities and their families, fostering community and mutual aid.",
-    image: "/attached_assets/generated_images/Disability_Support_Groups_ccb90f64.png",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
     icon: Users
   },
   {
     title: "Equipment Assistance",
     description: "We provide wheelchairs, mobility aids, and assistive devices to community members who need them.",
-    image: "/attached_assets/generated_images/Medical_Equipment_Assistance_b610e746.png",
+    image: "https://images.unsplash.com/photo-1559757264-b7ee2da3d6b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
     icon: Heart
   }
 ];

@@ -6,28 +6,28 @@ const ministries = [
     title: "Rescue Center",
     description: "Safe haven for vulnerable community members",
     bgClass: "from-orange-500 to-red-500",
-    image: "/attached_assets/generated_images/Rescue_Center_Ministry_b109b3d9.png"
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   },
   {
     icon: GraduationCap,
     title: "Kindergarten", 
     description: "Early education with Christian values",
     bgClass: "from-green-500 to-emerald-600",
-    image: "/attached_assets/generated_images/Parish_Kindergarten_f48ff65b.png"
+    image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   },
   {
     icon: Utensils,
     title: "Food Relief",
     description: "Food distribution for families in need",
     bgClass: "from-amber-500 to-yellow-600",
-    image: "/attached_assets/generated_images/Food_Relief_Program_2d08544f.png"
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   },
   {
     icon: HeartHandshake,
     title: "Disability Support",
     description: "Support services for disabled community members", 
     bgClass: "from-blue-500 to-indigo-600",
-    image: "/attached_assets/generated_images/Disability_Support_Services_0b935ce7.png"
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   }
 ];
 
@@ -39,7 +39,7 @@ export default function Ministries() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/attached_assets/generated_images/Rural_African_Church_d923e104.png')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1520637836862-4d197d17c952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')",
             animation: 'slowZoom 25s infinite'
           }}
         ></div>
