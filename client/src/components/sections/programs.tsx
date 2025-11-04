@@ -4,14 +4,14 @@ import { Check, ArrowRight } from "lucide-react";
 
 const programs = [
   {
-    title: "Rescue Center Program",
-    description: "Our rescue center provides safe accommodation, counseling, and rehabilitation services for vulnerable individuals and families. We offer temporary housing, meals, and support services while helping residents develop skills for independent living.",
+    title: "Marie Adelaide Center",
+    description: "Our girls' rescue center provides safety and protection for vulnerable Maasai girls at risk from female genital mutilation (FGM) and early forced marriage. We offer safe accommodation, counseling, education, and a path to empowerment and independence.",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     features: [
-      "24/7 Safe Accommodation",
-      "Counseling Services", 
-      "Skills Training Programs",
-      "Medical Support"
+      "Safe Haven & Protection",
+      "Trauma Counseling & Support", 
+      "Educational Opportunities",
+      "Life Skills Training"
     ],
     buttonText: "Learn More",
     buttonColor: "from-red-800 to-red-900"

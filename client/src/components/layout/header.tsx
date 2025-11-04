@@ -34,9 +34,9 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-xl font-bold parish-burgundy">
-                Ewuaso Parish
+                Ewuaso Kedong Parish
               </h1>
-              <p className="text-xs text-gray-600">Kajiado County</p>
+              <p className="text-xs text-gray-600">Diocese of Ngong</p>
             </div>
           </div>
 

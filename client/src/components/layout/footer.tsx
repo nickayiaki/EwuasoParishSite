@@ -19,12 +19,12 @@ export default function Footer() {
                 <Church className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">Ewuaso Parish</h3>
-                <p className="text-gray-400 text-sm">Kajiado County</p>
+                <h3 className="text-xl font-bold text-white">Ewuaso Kedong Parish</h3>
+                <p className="text-gray-400 text-sm">Diocese of Ngong</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4">
-              A Catholic community dedicated to serving God and our Maasai neighbors through faith, hope, and love in Kajiado County, Kenya.
+              A Catholic parish in the Diocese of Ngong, serving dispersed Maasai communities across the remote Ewuaso Kedong valley since 2004.
             </p>
             <div className="flex space-x-4">
               <a
@@ -108,7 +108,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-6 parish-gold">Our Services</h4>
             <ul className="space-y-3">
-              <li className="text-gray-300">Rescue Center</li>
+              <li className="text-gray-300">Marie Adelaide Center</li>
               <li className="text-gray-300">Parish Kindergarten</li>
               <li className="text-gray-300">Food Relief Program</li>
               <li className="text-gray-300">Scholarship Program</li>
@@ -125,8 +125,8 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="text-amber-400 mr-3 mt-1 flex-shrink-0" size={16} />
                 <div className="text-gray-300 text-sm">
-                  Ewuaso Parish, Suswa<br />
-                  P.O. Box 123<br />
+                  Ewuaso Kedong Parish<br />
+                  Diocese of Ngong<br />
                   Kajiado County, Kenya
                 </div>
               </div>

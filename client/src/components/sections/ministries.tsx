@@ -3,8 +3,8 @@ import { HandHeart, GraduationCap, Utensils, HeartHandshake } from "lucide-react
 const ministries = [
   {
     icon: HandHeart,
-    title: "Rescue Center",
-    description: "Safe haven for vulnerable community members",
+    title: "Marie Adelaide Center",
+    description: "Protecting vulnerable girls from FGM and early marriage",
     bgClass: "from-red-800 to-red-900",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   },

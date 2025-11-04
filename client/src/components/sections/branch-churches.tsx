@@ -3,9 +3,9 @@ import { MapPin, Clock, Users, Phone } from "lucide-react";
 
 const churches = [
   {
-    name: "Suswa Church",
-    location: "Suswa Town Center, Kajiado County",
-    description: "Main parish church in central Suswa.",
+    name: "Ewuaso Kedong Church",
+    location: "Ewuaso Kedong, Kajiado County",
+    description: "Main parish church serving the Ewuaso Kedong valley and surrounding Maasai communities.",
     image: "/Images/Suswa.jpg",
     masseTimes: [
       { day: "Sunday", time: "7:00 AM & 10:00 AM", language: "English & Kiswahili" },
@@ -16,9 +16,9 @@ const churches = [
     bgClass: "from-red-800 to-red-900"
   },
   {
-    name: "Saikerri Church",
-    location: "Saikerri Village, Kajiado County",
-    description: "Serving Maasai families in Saikerri area.",
+    name: "Saikeri Mass Centre",
+    location: "Saikeri Village, Kajiado County",
+    description: "Serving dispersed Maasai families in the Saikeri area.",
     image: "/Images/Saikerri.jpg",
     masseTimes: [
       { day: "Sunday", time: "8:00 AM", language: "Kiswahili & Maa" },
@@ -29,9 +29,9 @@ const churches = [
     bgClass: "from-green-500 to-emerald-600"
   },
   {
-    name: "Enkorika Church",
+    name: "Enkorika Mass Centre",
     location: "Enkorika Community, Kajiado County",
-    description: "Newest branch serving Enkorika community.",
+    description: "Remote mass center serving the Enkorika community and surrounding villages.",
     image: "/Images/saikerri.jpg",
     masseTimes: [
       { day: "Sunday", time: "9:00 AM", language: "English & Maa" },
@@ -59,9 +59,9 @@ export default function BranchChurches() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Our Churches</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Our Mass Centers</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Three vibrant church communities serving diverse populations across Kajiado County
+            Multiple mass centers serving dispersed Maasai communities across the vast Ewuaso Kedong valley
           </p>
         </div>
         

@@ -22,10 +22,10 @@ export default function PastorIntroduction() {
           <div className="animate-fade-in">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-6">Meet Father Mpete</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Serving Ewuaso Parish for over 15 years, transforming lives through faith and community development.
+              Leading Ewuaso Kedong Parish in the Catholic Diocese of Ngong, serving dispersed Maasai communities across a vast remote area since the parish opened in 2004.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Three churches, rescue center, kindergarten, and sustainable farming programs under his leadership.
+              Multiple mass centers including Saikeri, Najile, Enkorika & Empaash, the Marie Adelaide girls' rescue center, kindergarten, and community development programs flourish under his pastoral care.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">

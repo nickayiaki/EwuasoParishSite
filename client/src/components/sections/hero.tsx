@@ -56,10 +56,10 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-white via-amber-100 to-white bg-clip-text text-transparent">
-            Ewuaso Parish
+            Ewuaso Kedong Parish
           </h1>
           <p className="text-2xl md:text-3xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-90">
-            Serving God and our Maasai community in Kajiado County
+            Diocese of Ngong - Serving dispersed Maasai communities since 2004
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -82,8 +82,8 @@ export default function Hero() {
           
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-300">3</div>
-              <div className="text-base opacity-80">Churches</div>
+              <div className="text-3xl font-bold text-amber-300">5</div>
+              <div className="text-base opacity-80">Mass Centers</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-300">200+</div>
@@ -91,10 +91,10 @@ export default function Hero() {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-amber-300">50+</div>
-              <div className="text-base opacity-80">Students Supported</div>
+              <div className="text-base opacity-80">Girls Protected</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-amber-300">15+</div>
+              <div className="text-3xl font-bold text-amber-300">20+</div>
               <div className="text-base opacity-80">Years of Service</div>
             </div>
           </div>

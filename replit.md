@@ -1,8 +1,8 @@
-# Ewuaso Parish Website - Project Documentation
+# Ewuaso Kedong Parish Website - Project Documentation
 
 ## Overview
 
-This is a modern Catholic parish website built for Ewuaso Parish, featuring three branch churches (Suswa, Saikerri, and Enkorika). The application serves as a comprehensive platform for community engagement, service programs, and administration of various parish initiatives including rescue centers, educational programs, and relief services.
+This is a modern Catholic parish website built for Ewuaso Kedong Parish in the Diocese of Ngong, Kajiado County, Kenya. The parish opened in 2004 and serves dispersed Maasai communities across a vast remote area. The website features multiple mass centers (Ewuaso Kedong, Saikeri, Najile, Enkorika & Empaash) and serves as a comprehensive platform for community engagement, service programs, and administration of various parish initiatives including the Marie Adelaide girls' rescue center, educational programs, and relief services.
 
 ## User Preferences
 
