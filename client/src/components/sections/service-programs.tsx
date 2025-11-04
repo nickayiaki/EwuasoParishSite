@@ -12,7 +12,7 @@ export default function ServicePrograms() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Service Programs</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Service Programs</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Supporting families and students in Kajiado County through scholarships and relief programs
           </p>

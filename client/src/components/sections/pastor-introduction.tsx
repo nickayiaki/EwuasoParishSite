@@ -20,7 +20,7 @@ export default function PastorIntroduction() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Pastor Info */}
           <div className="animate-fade-in">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-6">Meet Father Mpete</h2>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-6">Meet Father Mpete</h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Serving Ewuaso Parish for over 15 years, transforming lives through faith and community development.
             </p>
@@ -31,7 +31,7 @@ export default function PastorIntroduction() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-xl border border-orange-200">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-red-800 to-red-900 rounded-full flex items-center justify-center mr-3">
                     <Heart className="text-white" size={20} />
                   </div>
                   <h3 className="font-semibold text-gray-900">Pastoral Care</h3>
@@ -51,7 +51,7 @@ export default function PastorIntroduction() {
             </div>
             
             <Button 
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 transition-all duration-200 group"
+              className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 text-white px-8 py-3 transition-all duration-200 group"
               onClick={() => scrollToSection('contact')}
             >
               Meet Father Mpete

@@ -14,7 +14,7 @@ const programs = [
       "Medical Support"
     ],
     buttonText: "Learn More",
-    buttonColor: "from-orange-500 to-red-500"
+    buttonColor: "from-red-800 to-red-900"
   },
   {
     title: "Parish Kindergarten",
@@ -36,7 +36,7 @@ export default function Programs() {
     <section id="programs" className="py-16 bg-gradient-to-br from-gray-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Our Programs</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Our Programs</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Comprehensive programs designed to uplift and empower our Kajiado County community
           </p>

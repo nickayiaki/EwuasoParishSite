@@ -65,7 +65,7 @@ export default function Contact() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Contact Us</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Contact Us</h2>
           <p className="text-lg text-gray-600">We're here to serve you and answer any questions about our programs in Kajiado County</p>
         </div>
         
@@ -76,7 +76,7 @@ export default function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-start transform hover:scale-105 transition-all duration-200">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-4 mt-1 shadow-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-red-800 to-red-900 rounded-full flex items-center justify-center mr-4 mt-1 shadow-lg">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
@@ -135,7 +135,7 @@ export default function Contact() {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 hover:shadow-md"
+                    className="focus:ring-2 focus:ring-red-800 focus:border-transparent transition-all duration-200 hover:shadow-md"
                   />
                   <Input
                     type="email"
@@ -143,7 +143,7 @@ export default function Contact() {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 hover:shadow-md"
+                    className="focus:ring-2 focus:ring-red-800 focus:border-transparent transition-all duration-200 hover:shadow-md"
                   />
                 </div>
                 <Input
@@ -152,7 +152,7 @@ export default function Contact() {
                   placeholder="Subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 hover:shadow-md"
+                  className="focus:ring-2 focus:ring-red-800 focus:border-transparent transition-all duration-200 hover:shadow-md"
                 />
                 <Textarea
                   name="message"
@@ -160,12 +160,12 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none transition-all duration-200 hover:shadow-md"
+                  className="focus:ring-2 focus:ring-red-800 focus:border-transparent resize-none transition-all duration-200 hover:shadow-md"
                 />
                 <Button
                   type="submit"
                   disabled={contactMutation.isPending}
-                  className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white py-3 font-semibold transition-all duration-200 transform hover:scale-105 group"
+                  className="w-full bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 text-white py-3 font-semibold transition-all duration-200 transform hover:scale-105 group"
                 >
                   {contactMutation.isPending ? "Sending..." : "Send Message"}
                   {!contactMutation.isPending && <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />}

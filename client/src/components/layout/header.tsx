@@ -9,7 +9,6 @@ const navigation = [
   { name: "Ministries", href: "ministries" },
   { name: "Programs", href: "programs" },
   { name: "Projects", href: "projects" },
-  { name: "Donate", href: "donation" },
   { name: "Contact", href: "contact" }
 ];
 
@@ -30,11 +29,11 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('home')}>
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-3 shadow-lg">
+            <div className="w-10 h-10 bg-gradient-to-br from-red-800 to-red-900 rounded-full flex items-center justify-center mr-3 shadow-lg">
               <Church className="text-white" size={24} />
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+              <h1 className="text-xl font-bold parish-burgundy">
                 Ewuaso Parish
               </h1>
               <p className="text-xs text-gray-600">Kajiado County</p>
@@ -47,7 +46,7 @@ export default function Header() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 hover:text-orange-600 font-medium transition-colors duration-200 hover:underline underline-offset-4"
+                className="text-gray-700 hover:text-red-800 font-medium transition-colors duration-200 hover:underline underline-offset-4"
               >
                 {item.name}
               </button>
@@ -57,7 +56,7 @@ export default function Header() {
           {/* Donate Button (Desktop) */}
           <div className="hidden lg:block">
             <Button 
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 transition-all duration-200 group"
+              className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 text-white px-6 py-2 transition-all duration-200 group"
               onClick={() => scrollToSection('donation')}
             >
               <Heart className="mr-2" size={16} />
@@ -86,13 +85,13 @@ export default function Header() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-left text-gray-700 hover:text-orange-600 font-medium py-2 transition-colors duration-200"
+                  className="text-left text-gray-700 hover:text-red-800 font-medium py-2 transition-colors duration-200"
                 >
                   {item.name}
                 </button>
               ))}
               <Button 
-                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white mt-4 w-full"
+                className="bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 text-white mt-4 w-full"
                 onClick={() => scrollToSection('donation')}
               >
                 <Heart className="mr-2" size={16} />

@@ -32,7 +32,7 @@ const donationOptions = [
     amount: "KSh 2,500",
     description: "Provide food and essentials for a family in need",
     icon: Home,
-    bgClass: "from-orange-500 to-amber-600",
+    bgClass: "from-red-800 to-amber-600",
     popular: false
   }
 ];
@@ -70,7 +70,7 @@ export default function Donation() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Support Our Mission</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Support Our Mission</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Your donations help us continue serving the Kajiado County community through our various programs and initiatives
           </p>
@@ -99,11 +99,11 @@ export default function Donation() {
             return (
               <Card 
                 key={index} 
-                className={`bg-white shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in relative ${option.popular ? 'ring-2 ring-orange-500' : ''}`}
+                className={`bg-white shadow-xl overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fade-in relative ${option.popular ? 'ring-2 ring-red-800' : ''}`}
                 style={{animationDelay: `${index * 100}ms`}}
               >
                 {option.popular && (
-                  <div className="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
+                  <div className="absolute top-0 right-0 bg-red-800 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
                     Popular
                   </div>
                 )}
@@ -117,7 +117,7 @@ export default function Donation() {
                 <CardContent className="p-6">
                   <p className="text-gray-600 mb-4 text-center leading-relaxed">{option.description}</p>
                   <Button 
-                    className="w-full bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white transition-all duration-200 group"
+                    className="w-full bg-gradient-to-r from-red-800 to-red-900 hover:from-red-900 hover:to-red-950 text-white transition-all duration-200 group"
                     onClick={() => handleDonate(option.amount)}
                   >
                     Donate Now

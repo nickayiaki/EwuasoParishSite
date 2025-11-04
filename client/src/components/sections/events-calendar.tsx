@@ -8,7 +8,7 @@ const events = [
     description: "Join us for our annual Christmas celebration with special masses at all three churches in Kajiado County.",
     location: "All Churches • 8:00 AM - 12:00 PM",
     icon: Calendar,
-    bgClass: "from-red-500 to-orange-600",
+    bgClass: "from-red-500 to-red-900",
     image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
   },
   {
@@ -50,7 +50,7 @@ export default function EventsCalendar() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Upcoming Events</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Upcoming Events</h2>
           <p className="text-lg text-gray-600">Stay connected with parish activities and special celebrations in our Kajiado County community</p>
         </div>
         
@@ -76,7 +76,7 @@ export default function EventsCalendar() {
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="font-bold text-gray-900 text-lg leading-tight">{event.title}</h3>
                   </div>
-                  <p className="text-sm text-orange-600 font-semibold mb-3">{event.date}</p>
+                  <p className="text-sm text-red-900 font-semibold mb-3">{event.date}</p>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{event.description}</p>
                   <div className={`text-sm font-semibold bg-gradient-to-r ${event.bgClass} bg-clip-text text-transparent`}>
                     {event.location}

@@ -13,7 +13,7 @@ const churches = [
       { day: "Weekdays", time: "6:30 AM", language: "Kiswahili" }
     ],
     contact: "+254 712 345 678",
-    bgClass: "from-orange-500 to-red-500"
+    bgClass: "from-red-800 to-red-900"
   },
   {
     name: "Saikerri Church",
@@ -59,7 +59,7 @@ export default function BranchChurches() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Our Churches</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Our Churches</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Three vibrant church communities serving diverse populations across Kajiado County
           </p>
@@ -81,7 +81,7 @@ export default function BranchChurches() {
               
               <CardContent className="p-6">
                 <div className="flex items-start mb-4">
-                  <MapPin className="text-orange-600 mr-2 mt-1 flex-shrink-0" size={16} />
+                  <MapPin className="text-red-900 mr-2 mt-1 flex-shrink-0" size={16} />
                   <p className="text-gray-600 text-sm leading-relaxed">{church.location}</p>
                 </div>
                 
@@ -89,7 +89,7 @@ export default function BranchChurches() {
                 
                 <div className="mb-6">
                   <div className="flex items-center mb-3">
-                    <Clock className="text-orange-600 mr-2" size={16} />
+                    <Clock className="text-red-900 mr-2" size={16} />
                     <h4 className="font-semibold text-gray-900">Mass Times</h4>
                   </div>
                   <div className="space-y-2">
@@ -98,7 +98,7 @@ export default function BranchChurches() {
                         <div className="flex justify-between items-start">
                           <div>
                             <span className="font-medium text-gray-900">{mass.day}</span>
-                            <div className="text-orange-600 font-semibold">{mass.time}</div>
+                            <div className="text-red-900 font-semibold">{mass.time}</div>
                           </div>
                           <span className="text-xs text-gray-500 bg-white px-2 py-1 rounded">{mass.language}</span>
                         </div>
@@ -121,7 +121,7 @@ export default function BranchChurches() {
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Special Services & Events</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-lg border border-orange-200">
-              <Users className="w-8 h-8 text-orange-600 mx-auto mb-3" />
+              <Users className="w-8 h-8 text-red-900 mx-auto mb-3" />
               <h4 className="font-semibold text-gray-900 mb-2">Wedding Ceremonies</h4>
               <p className="text-gray-600 text-sm">Beautiful wedding ceremonies in traditional and modern styles</p>
             </div>

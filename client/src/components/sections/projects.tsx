@@ -4,7 +4,7 @@ import { Sprout, Beef, TrendingUp, Users } from "lucide-react";
 const projectStats = [
   { value: "25", label: "Acres Under Cultivation", color: "text-green-600", icon: Sprout },
   { value: "50", label: "Head of Cattle", color: "text-amber-600", icon: Beef },
-  { value: "200", label: "Families Supported", color: "text-orange-600", icon: Users },
+  { value: "200", label: "Families Supported", color: "text-red-900", icon: Users },
   { value: "30", label: "Active Volunteers", color: "text-blue-600", icon: TrendingUp }
 ];
 
@@ -24,7 +24,7 @@ export default function Projects() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Community Projects</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Community Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Brother Vincent leads sustainable farming and livestock programs
           </p>
@@ -55,7 +55,7 @@ export default function Projects() {
             </Button>
           </div>
           
-          <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl p-8 text-white transform hover:scale-105 transition-all duration-300 shadow-xl">
+          <div className="bg-gradient-to-br from-amber-500 to-red-900 rounded-xl p-8 text-white transform hover:scale-105 transition-all duration-300 shadow-xl">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4 backdrop-blur-sm">
                 <Beef size={32} />

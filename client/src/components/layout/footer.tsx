@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Parish Info */}
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mr-3 shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-red-800 to-red-900 rounded-full flex items-center justify-center mr-3 shadow-lg">
                 <Church className="text-white" size={24} />
               </div>
               <div>
@@ -59,12 +59,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-orange-400">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6 parish-gold">Quick Links</h4>
             <ul className="space-y-3">
               <li>
                 <button 
                   onClick={() => scrollToSection('pastor')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-left"
+                  className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-left"
                 >
                   About Father Mpete
                 </button>
@@ -72,7 +72,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('branches')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-left"
+                  className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-left"
                 >
                   Mass Times
                 </button>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('ministries')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-left"
+                  className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-left"
                 >
                   Our Ministries
                 </button>
@@ -88,7 +88,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('programs')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-left"
+                  className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-left"
                 >
                   Programs
                 </button>
@@ -96,7 +96,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('projects')}
-                  className="text-gray-300 hover:text-orange-400 transition-colors duration-200 text-left"
+                  className="text-gray-300 hover:text-amber-400 transition-colors duration-200 text-left"
                 >
                   Community Projects
                 </button>
@@ -106,7 +106,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-orange-400">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-6 parish-gold">Our Services</h4>
             <ul className="space-y-3">
               <li className="text-gray-300">Rescue Center</li>
               <li className="text-gray-300">Parish Kindergarten</li>
@@ -120,10 +120,10 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-orange-400">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-6 parish-gold">Contact Us</h4>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="text-orange-400 mr-3 mt-1 flex-shrink-0" size={16} />
+                <MapPin className="text-amber-400 mr-3 mt-1 flex-shrink-0" size={16} />
                 <div className="text-gray-300 text-sm">
                   Ewuaso Parish, Suswa<br />
                   P.O. Box 123<br />
@@ -131,13 +131,13 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex items-center">
-                <Phone className="text-orange-400 mr-3 flex-shrink-0" size={16} />
+                <Phone className="text-amber-400 mr-3 flex-shrink-0" size={16} />
                 <div className="text-gray-300 text-sm">
                   +254 712 345 678
                 </div>
               </div>
               <div className="flex items-center">
-                <Mail className="text-orange-400 mr-3 flex-shrink-0" size={16} />
+                <Mail className="text-amber-400 mr-3 flex-shrink-0" size={16} />
                 <div className="text-gray-300 text-sm">
                   info@ewuasoparish.org
                 </div>
@@ -148,13 +148,13 @@ export default function Footer() {
 
         {/* Donation CTA */}
         <div className="border-t border-gray-800 pt-8 mt-8">
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-red-800 to-red-900 rounded-xl p-6 text-center">
             <Heart className="mx-auto mb-4 text-white" size={32} />
             <h3 className="text-2xl font-bold mb-2">Support Our Mission</h3>
             <p className="mb-4 opacity-90">Help us continue serving our Kajiado County community</p>
             <button 
               onClick={() => scrollToSection('donation')}
-              className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105 duration-200"
+              className="bg-white text-red-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105 duration-200"
             >
               Donate Now
             </button>

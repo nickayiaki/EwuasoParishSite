@@ -5,7 +5,7 @@ const ministries = [
     icon: HandHeart,
     title: "Rescue Center",
     description: "Safe haven for vulnerable community members",
-    bgClass: "from-orange-500 to-red-500",
+    bgClass: "from-red-800 to-red-900",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
   },
   {
@@ -47,7 +47,7 @@ export default function Ministries() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">Our Ministries</h2>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-900 to-red-950 bg-clip-text text-transparent mb-4">Our Ministries</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Serving Kajiado County through diverse community programs
           </p>
